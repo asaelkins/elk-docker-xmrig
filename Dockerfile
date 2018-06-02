@@ -18,4 +18,4 @@ RUN apk --no-cache upgrade && \
   git
 USER miner
 WORKDIR /xmrig
-ENTRYPOINt [".xmrig","--donate-level=2"]
+ENTRYPOINt ["./xmrig","--donate-level=2"]
