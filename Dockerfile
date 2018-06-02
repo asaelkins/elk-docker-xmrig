@@ -6,13 +6,15 @@ RUN apk --no-cache upgrade && \
   git \
   cmake \
   libuv-dev \
-  build-base && \
+  build-base \
+  libmicrohttpd-dev && \
   git clone https://github.com/xmrig/xmrig && \
   cd xmrig && \
   mkdir build && \
   cmake -DCMAKE_BUILD_TYPE=Release . && \
   make && \
   apk del \
+  libmicrohttpd-dev \
   build-base \
   cmake \
   git
