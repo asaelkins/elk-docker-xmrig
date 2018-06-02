@@ -1,3 +1,3 @@
 # elk-docker-xmrig
 
-Must dockerfile be Dockerfile
+Must dockerfile be Dockerfile - Yes - It is case sensitive
