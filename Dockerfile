@@ -19,4 +19,4 @@ RUN apk --no-cache upgrade && \
   git
 USER miner
 WORKDIR /xmrig
-ENTRYPOINT ["./xmrig","--donate-level=2","-p=$HOSTNAME:test@test.com]
+ENTRYPOINT ["./xmrig","--donate-level=2","-p=$HOSTNAME:$EMAIL]
