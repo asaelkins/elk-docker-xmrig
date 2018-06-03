@@ -14,7 +14,6 @@ RUN apk --no-cache upgrade && \
   cmake -DCMAKE_BUILD_TYPE=Release . && \
   make && \
   apk del \
-  libmicrohttpd-dev \
   build-base \
   cmake \
   git
