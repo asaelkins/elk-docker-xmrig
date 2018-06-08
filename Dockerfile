@@ -16,7 +16,9 @@ RUN apk --no-cache upgrade && \
   apk del \
   build-base \
   cmake \
-  git
+  git && \
+  cat  "./xmrig --donate-level=$donate -p=$HOSTNAME:$EMAIL -o $POOL -u $WALLET" > run_xmrig.sh && \
+  chmod 755 run_xmrig.sh
 USER miner
 WORKDIR /xmrig
-ENTRYPOINT ["./xmrig","--donate-level=2","-p=$HOSTNAME:$EMAIL"]
+ENTRYPOINT ["./run_xmrig.sh"]
