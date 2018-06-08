@@ -21,4 +21,3 @@ RUN apk --no-cache upgrade && \
   chmod 755 run_xmrig.sh
 USER miner
 WORKDIR /xmrig
-ENTRYPOINT ["./run_xmrig.sh"]
